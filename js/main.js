@@ -112,3 +112,5 @@ const items = [
 		color: 'blue'
 	}
 ];
+//colleghiamo al dom
+const containerDom = document.getElementById('container');
