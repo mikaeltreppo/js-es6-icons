@@ -114,3 +114,11 @@ const items = [
 ];
 //colleghiamo al dom
 const containerDom = document.getElementById('container');
+
+for (let i = 0; i < items.length; i++) {
+	containerDom.innerHTML += `<div class="card">
+  <div class="card-body d-flex flex-wrap justify-content-center">
+  <div class="w-100 text-center"><i class="fa-solid ${items[i].prefix}${items[i].name}" style="color:${items[i].color}"></i></div>
+  <div>${items[i].name}</div>
+  </div>
+</div>`}
