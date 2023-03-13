@@ -6,3 +6,10 @@
 h1 {
     font-family: 'Nunito', sans-serif;;
 }
+#container{
+    width: 80%;
+}
+#ms_card {
+    width: calc(100% / 5);
+}
+
