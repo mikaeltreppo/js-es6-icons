@@ -128,7 +128,6 @@ for (let i = 0; i < items.length; i++) {
 
 selectDom.addEventListener('change',
 	function () {
-
 		if (selectDom.value == "animals") {
 			containerDom.innerHTML = "";
 			let animalLeft = items.filter(anim => anim.type == "animal");
@@ -172,6 +171,7 @@ selectDom.addEventListener('change',
 		}
 		// resto
 		else {
+			containerDom.innerHTML = "";
 			for (let i = 0; i < items.length; i++) {
 				containerDom.innerHTML += `<div id="ms_card" class="card mt-5">
 			  <div class="card-body d-flex flex-wrap justify-content-center">
@@ -180,4 +180,4 @@ selectDom.addEventListener('change',
 			  </div>
 			</div>`}
 		}
-	})
+	});
